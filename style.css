@@ -1,0 +1,599 @@
+/* ==============================
+   GENERAL
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff7fb;
+    color: #294333;
+    line-height: 1.6;
+}
+
+
+/* ==============================
+   NAVIGATION
+================================= */
+
+header {
+    background-color: #315c43;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    max-width: 1100px;
+    margin: auto;
+    padding: 18px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #ffd1e5;
+    font-size: 26px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 20px;
+}
+
+nav a:hover {
+    background-color: #e89ab8;
+    color: white;
+    transition: 0.3s;
+}
+
+
+/* ==============================
+   HOME
+================================= */
+
+.hero {
+    min-height: 90vh;
+    max-width: 1100px;
+    margin: auto;
+
+    padding: 60px 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 50px;
+
+    position: relative;
+}
+
+
+/* Little flowers */
+
+.hero::before {
+    content: "🌸";
+    position: absolute;
+    top: 45px;
+    left: 10px;
+    font-size: 35px;
+}
+
+.hero::after {
+    content: "🌷";
+    position: absolute;
+    bottom: 40px;
+    right: 10px;
+    font-size: 35px;
+}
+
+.hero-text {
+    max-width: 550px;
+}
+
+.welcome {
+    color: #d96f9b;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin: 10px 0;
+    color: #315c43;
+}
+
+.hero h1 span {
+    color: #d96f9b;
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+
+/* ==============================
+   PERSONAL PICTURE
+================================= */
+
+.hero-image {
+    position: relative;
+}
+
+.hero-image::after {
+    content: "🌼";
+    position: absolute;
+    bottom: -15px;
+    right: -20px;
+    font-size: 45px;
+}
+
+.hero-image img {
+    width: 350px;
+    height: 350px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 8px solid #f5b5cd;
+
+    box-shadow: 0 8px 20px rgba(49, 92, 67, 0.15);
+}
+
+
+/* ==============================
+   BUTTON
+================================= */
+
+.button {
+    display: inline-block;
+
+    background-color: #d96f9b;
+
+    color: white;
+
+    padding: 12px 25px;
+
+    text-decoration: none;
+
+    border-radius: 25px;
+
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #315c43;
+    transition: 0.3s;
+}
+
+
+/* ==============================
+   SECTIONS
+================================= */
+
+.section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 90px 30px;
+
+    position: relative;
+}
+
+.section h2 {
+    text-align: center;
+
+    font-size: 35px;
+
+    margin-bottom: 25px;
+
+    color: #315c43;
+}
+
+.section h2::after {
+    content: " 🌸";
+    font-size: 25px;
+}
+
+.intro {
+    max-width: 750px;
+
+    margin: 0 auto 45px;
+
+    text-align: center;
+}
+
+
+/* ==============================
+   ABOUT CARDS
+================================= */
+
+.cards {
+    display: flex;
+    gap: 30px;
+}
+
+.card {
+    flex: 1;
+
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    border: 2px solid #f5d0df;
+
+    box-shadow: 0 5px 15px rgba(49, 92, 67, 0.08);
+
+    text-align: center;
+
+    position: relative;
+}
+
+.card::before {
+    content: "🌷";
+    position: absolute;
+
+    top: 10px;
+    right: 15px;
+
+    font-size: 25px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+
+    border-color: #d96f9b;
+
+    transition: 0.3s;
+}
+
+.icon {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    color: #d96f9b;
+
+    margin-bottom: 15px;
+
+    font-size: 24px;
+}
+
+
+/* ==============================
+   PORTFOLIO
+================================= */
+
+.portfolio {
+    max-width: 100%;
+
+    background-color: #eef7f0;
+
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+
+/* ==============================
+   ACTIVITY SECTIONS
+================================= */
+
+.activity-section {
+    max-width: 1000px;
+
+    margin: 0 auto 80px;
+
+    background-color: white;
+
+    padding: 35px;
+
+    border-radius: 20px;
+
+    border: 2px solid #d6eadb;
+
+    box-shadow: 0 5px 15px rgba(49, 92, 67, 0.08);
+
+    position: relative;
+}
+
+.activity-section::before {
+    content: "🌸";
+    position: absolute;
+
+    top: 15px;
+    left: 20px;
+
+    font-size: 25px;
+}
+
+.activity-section::after {
+    content: "🌼";
+    position: absolute;
+
+    bottom: 15px;
+    right: 20px;
+
+    font-size: 25px;
+}
+
+.activity-title {
+    text-align: center;
+
+    font-size: 30px;
+
+    color: #315c43;
+
+    margin-bottom: 15px;
+}
+
+.activity-description {
+    text-align: center;
+
+    max-width: 750px;
+
+    margin: 0 auto 30px;
+}
+
+
+/* ==============================
+   IMAGE GALLERY
+================================= */
+
+.gallery {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.gallery img {
+    width: 100%;
+
+    height: 230px;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+
+    border: 4px solid #f5d0df;
+
+    transition: 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.03);
+
+    border-color: #d96f9b;
+}
+
+
+/* ==============================
+   HIKING GALLERY
+================================= */
+
+.hiking-gallery {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+/* ==============================
+   VIDEO
+================================= */
+
+.media-title {
+    text-align: center;
+
+    font-size: 22px;
+
+    color: #d96f9b;
+
+    margin: 35px 0 15px;
+}
+
+.video-container {
+    display: flex;
+
+    justify-content: center;
+}
+
+.video-container video {
+    width: 80%;
+
+    max-width: 700px;
+
+    border-radius: 15px;
+
+    border: 4px solid #d6eadb;
+}
+
+
+/* ==============================
+   TABLE
+================================= */
+
+.table-title {
+    margin-top: 70px;
+}
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    margin-top: 30px;
+
+    background-color: white;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+}
+
+th,
+td {
+    border: 1px solid #d6eadb;
+
+    padding: 15px;
+
+    text-align: center;
+}
+
+th {
+    background-color: #315c43;
+
+    color: white;
+}
+
+tr:hover {
+    background-color: #fff0f6;
+}
+
+
+/* ==============================
+   CONTACT
+================================= */
+
+.contact {
+    text-align: center;
+
+    background-color: #fff7fb;
+}
+
+.contact::before {
+    content: "🌸  🌷  🌼";
+    display: block;
+
+    font-size: 25px;
+
+    margin-bottom: 20px;
+}
+
+.contact-box {
+    margin-top: 30px;
+
+    background-color: white;
+
+    max-width: 500px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 25px;
+
+    border-radius: 20px;
+
+    border: 2px solid #f5d0df;
+
+    box-shadow: 0 5px 15px rgba(49, 92, 67, 0.08);
+}
+
+.contact-box p {
+    margin: 10px;
+}
+
+.contact-box strong {
+    color: #d96f9b;
+}
+
+
+/* ==============================
+   FOOTER
+================================= */
+
+footer {
+    background-color: #315c43;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+}
+
+footer::before {
+    content: "🌸 🌷 🌼 ";
+}
+
+footer::after {
+    content: " 🌼 🌷 🌸";
+}
+
+
+/* ==============================
+   MOBILE
+================================= */
+
+@media (max-width: 700px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        gap: 8px;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero-image img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .hiking-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .video-container video {
+        width: 100%;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    th,
+    td {
+        padding: 10px;
+    }
+}
