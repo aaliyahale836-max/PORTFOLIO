@@ -1,5 +1,5 @@
-```css
-/* General */
+
+
 
 * {
     margin: 0;
@@ -19,7 +19,6 @@ html {
 }
 
 
-/* Navigation */
 
 header {
     background-color: #315c43;
@@ -98,7 +97,7 @@ nav a:hover {
 }
 
 
-/* Picture */
+
 
 .hero-image img {
     width: 330px;
@@ -109,7 +108,7 @@ nav a:hover {
 }
 
 
-/* Button */
+
 
 .button {
     display: inline-block;
@@ -119,6 +118,7 @@ nav a:hover {
     text-decoration: none;
     border-radius: 20px;
     font-weight: bold;
+    transition: 0.3s;
 }
 
 .button:hover {
@@ -126,7 +126,7 @@ nav a:hover {
 }
 
 
-/* Sections */
+
 
 .section {
     max-width: 1100px;
@@ -146,10 +146,9 @@ nav a:hover {
     margin: auto;
     text-align: center;
     margin-bottom: 35px;
+    white-space: pre-line;
 }
 
-
-/* About Cards */
 
 .cards {
     display: flex;
@@ -230,17 +229,19 @@ nav a:hover {
     object-fit: cover;
     border-radius: 10px;
     border: 3px solid #f5d0df;
+    transition: 0.3s;
 }
 
 .gallery img:hover {
     border-color: #d96f9b;
+    transform: scale(1.02);
 }
 
 
 /* Hiking Gallery */
 
 .hiking-gallery {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
 
 
@@ -270,7 +271,7 @@ nav a:hover {
     margin-top: 50px;
 }
 
-table {
+.table-container {
     width: 100%;
     border-collapse: collapse;
     margin-top: 25px;
