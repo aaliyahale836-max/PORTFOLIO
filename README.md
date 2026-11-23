@@ -5,13 +5,7 @@
 This is my personal website created to introduce myself,
 my interests, hobbies and activities.
 
-## Redesign Improvements
-- Improved website appearance.
-- Added semantic HTML elements.
-- Created a responsive layout.
-- Added local and externally hosted images.
-- Included a Robotics Club gallery and video.
-- Added an activities and skills table.
+
 
 ## Technologies Used
 - HTML5
